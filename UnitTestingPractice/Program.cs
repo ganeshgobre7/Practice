@@ -8,10 +8,10 @@ namespace UnitTestingPractice
         {
             Console.WriteLine("WELCOME TO UNIT TESTING");
             ArithmeticOperation operation = new ArithmeticOperation();
-            Console.WriteLine(operation.Add(10, 20));
-            Console.WriteLine(operation.Sub(20, 30));
-            Console.WriteLine(operation.Mul(20, 30));
-            Console.WriteLine(operation.Div(20, 10));
+            Console.WriteLine("Addition is :"+ operation.Add(10, 20));
+            Console.WriteLine("Substraction is :"+ operation.Sub(20, 30));
+            Console.WriteLine("Multiplication is :" + operation.Mul(20, 30));
+            Console.WriteLine("Division is :"+ operation.Div(20, 10));
         }
     }
 }

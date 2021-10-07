@@ -1,8 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\admin\.nuget\packages\nlog.config\4.7.11\contentFiles\any\any\NLog.config" />
+    <None Remove="C:\Users\admin\.nuget\packages\nlog.schema\4.7.11\contentFiles\any\any\NLog.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.11" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.7.4" />
+	<None Update="nlog.config" CopyToOutputDirectory="Always" />
+  </ItemGroup>
 
 </Project>
