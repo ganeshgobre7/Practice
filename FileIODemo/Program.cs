@@ -8,8 +8,9 @@ namespace FileIODemo
         {
             Console.WriteLine("WelCome to FileIO");
             FileDemo file = new FileDemo();
-            file.CheckFile();
-            file.ReadFile();
+           /* file.CheckFile();
+            file.ReadFile();*/
+            file.WriteFile();
         }
     }
 }

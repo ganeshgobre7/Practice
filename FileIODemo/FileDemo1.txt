@@ -1,5 +1,4 @@
-﻿HTML
-CSS
 JAVA
 C#
-SQL
+HTML
+CSS

@@ -7,7 +7,7 @@ namespace FileIODemo
 {
     class FileDemo
     {
-        string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo1.txt";
+        string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo2.txt";
         public void CheckFile()
         {           
             if(File.Exists(path))
@@ -34,6 +34,14 @@ namespace FileIODemo
                 {
                     Console.WriteLine(linens);
                 }
+            }
+        }
+        public void WriteFile(string cont="Angular")
+        {
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+                File.WriteAllText(path,"cont");
             }
         }
     }
