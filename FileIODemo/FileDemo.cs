@@ -9,8 +9,15 @@ namespace FileIODemo
     {
         public void CheckFile()
         {
-            string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo1.txt";
-            File.Exists(path);
+            string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo2.txt";
+            if(File.Exists(path))
+            {
+                Console.WriteLine("File Exits");
+            }
+            else
+            {
+                Console.WriteLine("File is Missing");
+            }
         }
     }
 }
