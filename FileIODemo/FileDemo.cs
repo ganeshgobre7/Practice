@@ -8,7 +8,8 @@ namespace FileIODemo
     class FileDemo
     {
         string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo1.txt";
-        string copypath = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo3.txt";
+        string copypath = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo4.txt";
+        string deletefile = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\delete.txt";
         public void CheckFile()
         {           
             if(File.Exists(path))
@@ -50,10 +51,11 @@ namespace FileIODemo
             if (File.Exists(path))
             {
                 File.Copy(path, copypath);
-                /*FileInfo f1 = new FileInfo(path);
-                FileInfo f2 = new FileInfo(copypath);
-                f1.CopyTo(copypath);*/
             }
+        }
+        public void DeleteFile()
+        {
+            File.Delete(deletefile); 
         }
     }
 }

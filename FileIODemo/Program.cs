@@ -12,6 +12,7 @@ namespace FileIODemo
             file.ReadFile();*/
             file.WriteFile();
             file.CopyFile();
+            file.DeleteFile();
            
          
         }
