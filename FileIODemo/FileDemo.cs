@@ -7,7 +7,8 @@ namespace FileIODemo
 {
     class FileDemo
     {
-        string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo2.txt";
+        string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo1.txt";
+        string copypath = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo3.txt";
         public void CheckFile()
         {           
             if(File.Exists(path))
@@ -36,12 +37,22 @@ namespace FileIODemo
                 }
             }
         }
-        public void WriteFile(string cont="Angular")
+        public void WriteFile(string cont="")
         {
             if (!File.Exists(path))
             {
                 File.Create(path);
-                File.WriteAllText(path,"cont");
+                File.WriteAllText(path, "cont");
+            }
+        }
+        public void CopyFile()
+        {
+            if (File.Exists(path))
+            {
+                File.Copy(path, copypath);
+                /*FileInfo f1 = new FileInfo(path);
+                FileInfo f2 = new FileInfo(copypath);
+                f1.CopyTo(copypath);*/
             }
         }
     }

@@ -11,6 +11,9 @@ namespace FileIODemo
            /* file.CheckFile();
             file.ReadFile();*/
             file.WriteFile();
+            file.CopyFile();
+           
+         
         }
     }
 }
