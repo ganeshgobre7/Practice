@@ -7,9 +7,9 @@ namespace FileIODemo
 {
     class FileDemo
     {
+        string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo1.txt";
         public void CheckFile()
-        {
-            string path = @"D:\B.LAB\C sharp\FileIODemo\FileIODemo\FileDemo2.txt";
+        {           
             if(File.Exists(path))
             {
                 Console.WriteLine("File Exits");
@@ -17,6 +17,23 @@ namespace FileIODemo
             else
             {
                 Console.WriteLine("File is Missing");
+            }
+        }
+        public void ReadFile()
+        {
+            if(File.Exists(path))
+            {
+                var data=File.ReadAllLines(path);
+                var data1 = File.ReadAllText(path);
+                foreach(var linens in data)
+                {
+                    Console.WriteLine(linens);
+                }
+                Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                foreach (var linens in data1)
+                {
+                    Console.WriteLine(linens);
+                }
             }
         }
     }
